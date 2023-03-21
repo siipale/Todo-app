@@ -1,4 +1,9 @@
-@include('layouts.app')
+<div class="container mt-4">
+  @if(session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+  @endif
 <div class="card">
         <div class="card-header">{{ __('Add task') }}</div>
 
@@ -17,6 +22,7 @@
                                {{ __('Create task') }}
                         </button>
                     </div>
+                    @csrf
 
         </form>
     </div>

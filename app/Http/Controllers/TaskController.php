@@ -22,4 +22,6 @@ class TaskController extends Controller
         return redirect('task-editor')->with('status', 'Task created succesfully');
 
     }
+
+
 }

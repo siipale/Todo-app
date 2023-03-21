@@ -14,13 +14,11 @@ use App\Models\Task;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\TaskController::class, 'index'])->name('home');
 
 Route::get('/task-editor', [App\Http\Controllers\TaskController::class, 'taskEditor'])->name('task-editor');
 
