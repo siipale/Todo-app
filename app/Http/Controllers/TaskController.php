@@ -19,7 +19,7 @@ class TaskController extends Controller
         $task->description = $request->description;
         $task->check = 0;
         $task->save();
-        return redirect('task-editor')->with('status', 'Task created succesfully');
+        return redirect('/')->with('status', 'Task created succesfully');
 
     }
 

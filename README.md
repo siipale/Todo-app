@@ -4,7 +4,13 @@
 
 This is very simple web-application just to get better understanding how to utilize Laravel framework
 
-## Current features - see screenshots below
+## Upcoming features
+
+- Marking tasks done/undone
+- Time tracking for each task
+- (Possibility to maintain multiple users with separate tasklists)
+
+## Current features
 
  - Add new tasks
  - See current tasks
