@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Task;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,5 +19,29 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        Task::create([
+                'title' => 'Job application',
+                'description' => 'Apply for a job',
+                'check' => '0'
+        ]);
+
+        Task::create([
+                'title' => 'Do research',
+                'description' => 'Investigate available data',
+                'check' => '0'
+        ]);
+
+        Task::create([
+                'title' => 'Design dashboard',
+                'description' => 'Design better dashboard',
+                'check' => '0'
+        ]);
+
+        Task::create([
+                'title' => 'Install and migrate database',
+                'description' => 'Install sql database and run the migrations',
+                'check' => '1'
+        ]);
     }
 }
