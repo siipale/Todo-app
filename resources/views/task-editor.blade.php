@@ -1,4 +1,4 @@
-
+@include('layouts.app')
 <div class="card">
         <div class="card-header">{{ __('Add task') }}</div>
 
