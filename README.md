@@ -2,7 +2,7 @@
 
 ## About
 
-This is very simple web-application just to get better understanding how to utilize Laravel framework
+This very simple web-application helps to organize daily tasks and keep up with the workflow.
 
 ## Upcoming features
 
